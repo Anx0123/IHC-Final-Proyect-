@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    min-height: 600px;
+    padding: 80px 0;
+    background-image: linear-gradient(to top, #840000 0%, #840000 100%);
+    background: #281737;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.main{
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+    overflow: hidden;
+    padding: .7em;
+    border-radius: 1em;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(319px, 1fr));
+    gap: .6em;
+    animation: mostar 1.5s ease-in-out;
+}
+@keyframes mostar{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.main_figure{
+    overflow: hidden;
+    border-radius: 1em;
+    display: flex;
+}
+.main_img{
+    margin: auto;
+    width: 80%;
+    max-width: 60vw;
+}
+.main_contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 3em .7em;
+    text-align: center;
+}
+.main_title{
+    color:white;
+    font-size: 2.3rem;
+    padding: 2rem 0rem;
+}
+.main_paragraph{
+    margin: .3em 0;
+}
+.main_form{
+    display: grid;
+    justify-items: center;
+    gap: 1.5em;
+}
+.main_input{
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em; 
+
+}
+.main_input--send{
+    background-color: #840000;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.main_social{
+    padding: 2rem 0rem;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-auto-columns: max-content;
+    gap: 1em;
+}
+.main_link{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: .6em 1.5em;
+}
+.main_link:hover{
+    background-color: #fff;
+}
+.main_icon{
+    width: 30px;
+    height: 30px;
+}
+.rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Esto centra los elementos horizontalmente */
+}
+.formulario {
+    width: 70%;
+    padding: 20px;
+    background-color: #9340FF;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+h6{
+    padding:0.5rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #260E69;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    border-radius: 10px;
+}
+.formulario input[type="password"],
+.formulario input[type="email"],
+.formulario textarea,
+.formulario label {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+/* Estilo del área de texto para el mensaje */
+.formulario textarea {
+    resize: none; /* Desactiva el redimensionamiento */
+    height: 100px;
+}
+
+/* Estilo del botón enviar */
+.formulario input[type="submit"] {
+    padding: 2rem 0rem;
+    margin-top: 10px;
+    padding: 10px 15px; /* Añade padding para darle más tamaño */
+    border: none; /* Quita el borde por defecto */
+    border-radius: 5px; /* Añade bordes redondeados */
+    background-color: #260E69; /* Color de fondo */
+    color: white; /* Color de texto */
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    font-size: 14px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+    transition: background-color 0.3s, transform 0.3s; /* Añade una transición suave al cambiar el color de fondo y al escalar */
+    display: block; /* Hace que el botón ocupe todo el ancho */
+    margin: auto; /* Centra el botón horizontalmente */
+}
+
+/* Efecto de hover para el botón enviar */
+.formulario input[type="submit"]:hover {
+    background-color: #6B57A7; /* Cambia el color de fondo al pasar el ratón por encima */
+    transform: scale(1.05); /* Escala el botón un 5% más grande al pasar el ratón por encima */
+}
+
+/* Efecto de activación (click) para el botón enviar */
+.formulario input[type="submit"]:active {
+    transform: scale(0.95); /* Escala el botón un 5% más pequeño al hacer click */
+}
+.contactRow {
+    justify-content: space-between;
+}

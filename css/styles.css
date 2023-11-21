@@ -1,0 +1,478 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Calibri', sans-serif; /* Añadido */
+    font-weight: bold; /* Añadido */
+}
+header{
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+nav{
+    display: flex;           /* Nuevo */
+    background:#260E69;
+    height: 80px;
+    width: 100%;
+    justify-content: center; /* Nuevo */
+    align-items: center;     /* Para centrar verticalmente */
+}
+nav ul li{
+    display: inline-block;
+    line-height:80px;
+    margin:0 1px;
+}
+nav ul li a{
+    color:white;
+    font-size: 2vw;
+    padding:5px 7px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+/* Establecer un tamaño mínimo de fuente */
+@media (max-width: 600px) {
+    nav ul li a{
+        font-size: 11px;
+    }
+}
+
+/* Establecer un tamaño máximo de fuente */
+@media (min-width: 1200px) {
+    nav ul li a{
+        font-size: 40px;
+    }
+}
+li a:hover{
+    color:lightseagreen;
+    transition:.75s;
+}
+section.inicio{
+    background: #1D1028;
+    padding: 3rem 0;
+}
+.containerB{
+    width:90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    grid-gap:2rem;
+}
+.col1{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.imageInicio{
+    width:100%;
+}
+.col2{
+    padding: 1rem 2rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 3rem;
+    color: white;
+}
+#txtinicio{
+    margin: 2rem 0;
+    font-size:1.3rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.ofrecemos{
+    padding: 6rem 0;
+    background: #281737;
+}
+.subOfrecemos{
+    text-align: left;
+    color:#4c4c4c
+}
+.containerO{
+    width:100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+}
+.boxO{
+    padding:4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: linear-gradient(to right, #230939, #492874);
+}
+.boxO h3 {
+    position: absolute;  /* Hace que el elemento se pueda posicionar respecto a su contenedor */
+    top: 20px;            /* Posiciona el elemento 5px desde la parte superior del contenedor */
+    left: 20px;           /* Posiciona el elemento 5px desde el lado izquierdo del contenedor */
+    margin: 0;           /* Elimina cualquier margen para asegurar la posición */
+    color: white;
+    background-color: black;
+    border-radius: 100%;
+    padding: 20px;
+    font-size:30px;
+}
+
+.boxO p{
+    padding:3rem 1rem;
+    text-align: center;
+    color:white;
+    font-size:35px;
+
+}
+
+.nosotros{
+    padding: 6rem 0;
+    background: #1D1028;
+}
+.subNosotros{
+    text-align: center;
+    padding-bottom: 2rem;
+    color:#ff0000
+}
+h4{
+    font-size: 4rem;
+    color: #40FFBA;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+.containerN{
+    width:90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+    grid-gap:2rem;
+}
+.boxN{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.boxN img{
+    width:210px;
+}
+.boxN p{
+    text-align: center;
+    color:white;
+    font-size:30px;
+
+}
+
+.app{
+    padding: 6rem 0;
+    background: #281737;
+}
+h5{
+    font-size: 4rem;
+    color: #40FFBA;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+.subApp{
+    text-align: left;
+    color:#4c4c4c
+}
+.containerA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftColumn {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.rightColumn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40%; /* Reduciendo el margen para acercar los elementos */
+}
+.rightColumn img{
+    width:35%;
+}
+.boxA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.boxA p{
+    padding: 1rem 1rem;
+    max-width: 61.7%; /* Ajusta este porcentaje para que se ajuste al espacio entre las dos líneas rojas */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+.boxA img{
+    width:150px;
+}
+.boxB{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-right: 5px; /* Margen derecho de 5 píxeles */
+}
+.boxB img {
+    max-width: 90%; /* Hace que la imagen sea responsiva */
+    width: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 5px;
+}
+.boxC {
+    display: flex;
+    align-items: center; 
+}
+.boxC img {
+    max-width: 90%; /* Hace que la imagen sea responsiva */
+    width: auto; /* Mantiene la proporción de la imagen */
+}
+a img {
+    border: none;
+    transition: opacity 0.3s ease;
+}
+
+a:hover img {
+    opacity: 0.8;
+}
+.Planes{
+    padding: 6rem 0rem;
+    background: #1D1028;
+}
+.subPlanes{
+    text-align: left;
+    color:#4c4c4c
+}
+.containerP{
+    width:60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+}
+.boxP{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.boxP p{
+    text-align: center;
+    color:white;
+    font-size:35px;
+    background-image: linear-gradient(to right, #230939, #492874);
+}
+.boxP p2{
+    font-size: 48px;
+    text-align:center;
+    background-image: linear-gradient(to right, white, #492874);
+}
+.boxP p3{
+    font-size: 25px;
+    text-align:center;
+    background-image: linear-gradient(to right, white, #492874);
+}
+.boxP2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color:white;
+}
+.boxP2 p{
+    text-align: center;
+    font-size:35px;
+    background-image: linear-gradient(to right, #230939, #492874);
+}
+.boxP2 p2{
+    font-size: 48px;
+    text-align:center;
+    background-image: linear-gradient(to right, #492874,#230939);
+}
+.boxP2 p3{
+    font-size: 20.6px;
+    text-align:center;
+    background-image: linear-gradient(to right, #492874,#230939);
+}
+.boxP, .boxP2 {
+    margin-right: 30px;  /* Añade un margen a la derecha */
+}
+h6{
+    width: 75%; /* Establece el ancho al 80% del contenedor padre */
+    padding:0.5rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #260E69;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    border-radius: 10px;
+}
+.Contacto{
+    padding: 6rem 0rem;
+    background: #281737;
+}
+.subContacto{
+    text-align: left;
+    color:#4c4c4c
+}
+.containerC {
+    width: 30%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px; /* Este es el margen adicional a la izquierda */
+}
+
+.boxD {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    align-items: center; /* Esto asegura que el contenido esté centrado en el cuadro */
+    position: relative;
+    background-color: #9340FF;
+    border-radius: 10px;
+    padding: 10px; /* Esto proporciona un relleno interno al cuadro, asegurando que el contenido no esté pegado a los bordes */
+    margin: 10px 0;
+}
+
+.boxD img {
+    width: 20%;
+    height: auto;
+    display: block;
+}
+
+.boxD p, .boxD p2 {
+    text-align: center;
+}
+
+.boxD p {
+    font-size: 35px;
+}
+
+.boxD p2 {
+    font-size: 17px;
+}
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    margin-top: 0px;
+    text-align: center;
+}
+/* Estilo general del contenedor del formulario */
+.formulario {
+    width: 70%;
+    padding: 20px;
+    background-color: #9340FF;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+/* Estilo del título */
+.formulario h2 {
+    margin-bottom: 10px; /* de 20px a 10px */
+}
+
+/* Estilo general de los campos de texto y área de texto */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea,
+.formulario label {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Estilo del área de texto para el mensaje */
+.formulario textarea {
+    resize: none; /* Desactiva el redimensionamiento */
+    height: 100px;
+}
+
+/* Estilo del botón enviar */
+.formulario input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 15px; /* Añade padding para darle más tamaño */
+    border: none; /* Quita el borde por defecto */
+    border-radius: 5px; /* Añade bordes redondeados */
+    background-color: #260E69; /* Color de fondo */
+    color: white; /* Color de texto */
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    font-size: 14px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+    transition: background-color 0.3s, transform 0.3s; /* Añade una transición suave al cambiar el color de fondo y al escalar */
+    display: block; /* Hace que el botón ocupe todo el ancho */
+    margin: auto; /* Centra el botón horizontalmente */
+}
+
+/* Efecto de hover para el botón enviar */
+.formulario input[type="submit"]:hover {
+    background-color: #6B57A7; /* Cambia el color de fondo al pasar el ratón por encima */
+    transform: scale(1.05); /* Escala el botón un 5% más grande al pasar el ratón por encima */
+}
+
+/* Efecto de activación (click) para el botón enviar */
+.formulario input[type="submit"]:active {
+    transform: scale(0.95); /* Escala el botón un 5% más pequeño al hacer click */
+}
+.contactRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Esto centra los elementos horizontalmente */
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Esto distribuirá las secciones uniformemente en el espacio disponible */
+    flex-wrap: wrap; /* Esto permite que los elementos se ajusten en filas múltiples si no hay suficiente espacio */
+    padding: 1px; /* Añade padding según tu diseño */
+}
+
+.comunidad-section, .publicidad-section, .idioma-section {
+    flex: 1; /* Cada sección tomará 1/3 del espacio disponible */
+    padding: 10px; /* Añade un poco de padding para separar las secciones */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin-top: 5px; /* Espacio adicional en la parte superior para separarlo de las secciones */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espacio entre cada icono */
+}
+
+/* Estilos para los títulos h2 y las listas dentro de cada sección */
+.comunidad-section h2, .publicidad-section h2, .idioma-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1px;
+}
+
+.comunidad-section ul, .publicidad-section ul, .idioma-section ul {
+    list-style-type: none; /* Elimina los puntos de las listas */
+    padding-left: 0; /* Elimina el padding predeterminado de las listas */
+}
+
+.comunidad-section li, .publicidad-section li, .idioma-section li {
+    margin-bottom: 1px; /* Espacio entre cada elemento de la lista */
+}
